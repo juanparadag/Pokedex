@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="/images/images (1).jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <img
+          id="pokelogo"
+          src="/images/png-clipart-hd-pokemon-logo-hd-pokemon-logo.png"
+          alt="Pokemon Logo"
+        />
+      </div>
+      <div class="div-search">
+        <input type="text" id="search" placeholder="Search Pokemon" />
+        <button id="searchButton"><i class="bi bi-search"></i></button>
+      </div>
+    </header>
+
+    <div class="div-filter">
+      <button id="grass-btn">Grass</button>
+      <button id="poison-btn">Poison</button>
+      <button id="fire-btn">Fire</button>
+      <button id="flying-btn">Flying</button>
+      <button id="water-btn">Water</button>
+      <button id="bug-btn">Bug</button>
+      <button id="normal-btn">Normal</button>
+      <button id="electric-btn">Electric</button>
+      <button id="ground-btn">Ground</button>
+      <button id="fairy-btn">Fairy</button>
+      <button id="fighting-btn">Fighting</button>
+      <button id="psychic-btn">Psychic</button>
+      <button id="rock-btn">Rock</button>
+      <button id="ice-btn">Ice</button>
+      <button id="steel-btn">Steel</button>
+      <button id="ghost-btn">Ghost</button>
+    </div>
+
+    <main id="pokemon-list">
+      <div id="pokemon-list"></div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
