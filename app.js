@@ -73,7 +73,7 @@ function callback(funcionNombre, funcionHabilidad, i) {
   let p = document.createElement("p");
   p.innerHTML = `ID: ${
     i < 10 ? "#00" + i : i < 100 ? "#0" + i : "#" + i
-  }<br>Nombre: ${funcionNombre}<br>Habilidad: ${funcionHabilidad}`;
+  }<br>Name: ${funcionNombre}<br>Hability: ${funcionHabilidad}`;
   div.classList.add("div-pokemons");
   div.appendChild(image);
   div.appendChild(p);
@@ -152,7 +152,7 @@ document.querySelector("#search").addEventListener("keydown", function (e) {
     busquedaPokemons();
   }
 });
-
+//Creacion de un filtro
 function filtrarHabilidadEventos(boton, habilidad) {
   document
     .querySelector(boton)
@@ -178,4 +178,4 @@ const arrayHabsYBtns = [
 ];
 arrayHabsYBtns.forEach((habYBtn) =>
   filtrarHabilidadEventos(habYBtn[0], habYBtn[1])
-);
+); //Defino las habilidades de los pokemos para crear un filtro con la funcion FiltrarHabilidades
